@@ -8,7 +8,7 @@
 #   - models/shap_explainer.pkl  : l'explainer sauvegarde pour l'interface Streamlit
 #
 # A lancer depuis la racine du projet APRES 02_train_model.py :
-# python notebooks/03_shap_explain.py
+# python scripts/03_shap_explain.py
 
 import pandas as pd   # manipulation des donnees
 import numpy as np    # operations sur les tableaux numeriques

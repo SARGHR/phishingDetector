@@ -1,10 +1,10 @@
-# 🛡️ Détecteur de Phishing Intelligent
+#  Détecteur de Phishing Intelligent
 **Projet Tuteuré L3 — Science des Données | Université Lumière Lyon 2 | 2025–2026**  
 **Auteure : Sarah Ghouar**
 
 ---
 
-## 📌 Description
+##  Description
 
 Système intelligent de détection de phishing par Machine Learning et explicabilité (SHAP).  
 Le système analyse une URL en temps réel et prédit si elle est **légitime ou malveillante**, en expliquant **pourquoi** grâce aux valeurs SHAP.
@@ -18,7 +18,7 @@ Le système analyse une URL en temps réel et prédit si elle est **légitime ou
 
 ---
 
-## 🏗️ Architecture du projet
+## Architecture du projet
 phishingDetector/
 ├── data/
 │   ├── raw/                  ← dataset UCI brut (11 054 URLs)
@@ -34,7 +34,7 @@ phishingDetector/
 │   ├── feature_names.pkl     ← ordre exact des 30 features
 │   ├── shap_explainer.pkl    ← explainer SHAP
 │   └── versions/             ← historique des modèles réentraînés
-├── notebooks/
+├── scripts/
 │   ├── 01_exploration.py     ← exploration et nettoyage du dataset
 │   ├── 02_train_model.py     ← entraînement RF + XGBoost + Ensemble
 │   └── 03_retrain.py         ← réentraînement avec corrections utilisateurs
@@ -48,7 +48,7 @@ phishingDetector/
 
 ---
 
-## ⚙️ Installation
+## Installation
 
 ### Prérequis
 - Python 3.11+
@@ -72,7 +72,7 @@ pip install -r requirements.txt
 
 ---
 
-## 🚀 Lancement
+##  Lancement
 
 ### Interface web (recommandé)
 ```bash
@@ -82,12 +82,12 @@ Puis ouvrir `http://localhost:8501` dans le navigateur.
 
 ### Réentraîner le modèle (si > 10 corrections collectées)
 ```bash
-python notebooks/03_retrain.py
+python scripts/03_retrain.py
 ```
 
 ---
 
-## 📊 Performances du modèle
+##  Performances du modèle
 
 | Modèle | Précision | Recall | AUC-ROC |
 |--------|-----------|--------|---------|
@@ -99,7 +99,7 @@ Dataset : UCI Phishing Websites (11 054 URLs, 30 features, 0 valeurs manquantes)
 
 ---
 
-## 🔍 Fonctionnement des features
+##  Fonctionnement des features
 
 Les 30 features sont extraites selon les règles officielles du dataset UCI (Mohammad, Thabtah & McCluskey, 2014) :
 
@@ -110,7 +110,7 @@ Convention : `1 = Phishing`, `-1 = Légitime`, `0 = Suspect`
 
 ---
 
-## 🖥️ Interface Streamlit
+##  Interface Streamlit
 
 | Page | Description |
 |------|-------------|
@@ -120,7 +120,7 @@ Convention : `1 = Phishing`, `-1 = Légitime`, `0 = Suspect`
 
 ---
 
-## 📚 Sources et références
+##  Sources et références
 
 - Dataset : Mohammad, R., Thabtah, F. & McCluskey, L. (2014). *Phishing Websites Dataset*. UCI ML Repository.
 - SHAP : Lundberg, S. & Lee, S.I. (2017). *A Unified Approach to Interpreting Model Predictions*. arXiv:1705.07874
@@ -128,7 +128,7 @@ Convention : `1 = Phishing`, `-1 = Légitime`, `0 = Suspect`
 
 ---
 
-## ✍️ Auteure
+##  Auteure
 
 **Sarah Ghouar**  
 L3 Informatique — Science des Données  

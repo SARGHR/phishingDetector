@@ -5,7 +5,7 @@
 #   - feature_names.pkl  : la liste ordonnee des 30 noms de features
 #
 # A lancer depuis la racine du projet :
-# python notebooks/02_train_model.py
+# python scripts/02_train_model.py
 #
 # Resultat attendu : AUC-ROC > 0.99 sur les 3 modeles
 

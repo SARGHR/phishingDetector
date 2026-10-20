@@ -234,7 +234,7 @@ if page == "Analyseur":
                         st.warning(f"Correction enregistree ! ({nb} corrections au total)")
                         if nb >= 10:
                             # seuil atteint -> on peut reentainer le modele
-                            st.info("Seuil de 10 corrections atteint - lancer le reentainement : python notebooks/03_retrain.py")
+                            st.info("Seuil de 10 corrections atteint - lancer le reentainement : python scripts/03_retrain.py")
         else:
             st.warning("Merci d'entrer une URL.")
 
@@ -279,9 +279,9 @@ elif page == "Dashboard":
         # ['proba'] selectionne uniquement la colonne des probabilites pour l'axe Y
 
 
-# ══════════════════════════════════════════════════════════════
+
 # PAGE 3 — HISTORIQUE
-# ══════════════════════════════════════════════════════════════
+
 elif page == "Historique":
     st.title("Historique des analyses")
 

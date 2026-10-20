@@ -6,7 +6,7 @@
 #   - Au moins 10 corrections enregistrees dans la base SQLite
 #
 # A lancer manuellement depuis la racine du projet :
-# python notebooks/03_retrain.py
+# python scripts/03_retrain.py
 #
 # Ce script produit :
 #   - Un nouveau modele sauvegarde dans models/versions/ (historique)

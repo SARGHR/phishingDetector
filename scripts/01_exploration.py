@@ -5,7 +5,7 @@
 # on travaille toujours sur une copie nettoyee.
 #
 # A lancer UNE SEULE FOIS depuis la racine du projet :
-# python notebooks/01_exploration.py
+# python scripts/01_exploration.py
 
 import pandas as pd          # pour charger et manipuler les donnees
 import matplotlib.pyplot as plt  # pour creer et sauvegarder des graphiques

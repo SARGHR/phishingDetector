@@ -1,2 +1,6 @@
 env_phishing/
 __pycache__/
+data/feedback/historique.db
+data/processed/
+.DS_Store
+*.pyc
